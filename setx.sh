@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-echo Hello World
+x=22
