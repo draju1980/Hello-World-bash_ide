@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+echo -n "Print message? "
+valid=0
+while
+[ $valid == 0 ]
+do
+	read and
+	case $ans in yes|YES|y|Y	)
+           echo will print the message 
+		       echo The Message
+		       valid=1 ;;
+	[nN][oO] )
+           echo will NOT print the message
+			     valid=1 ;;
+	*		) 
+          echo Yes or No of same form please ;;
+	esac
+done
